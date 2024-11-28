@@ -1,0 +1,25 @@
+*{
+    font-family:Arial, Helvetica, sans-serif
+}
+header{
+    background-color: floralwhite;
+}
+.nav-item a{
+    color: darkseagreen;
+}
+#boton-perfil{
+    background-color:cadetblue;
+}
+
+.nav-item a{
+    color: darksalmon;
+}
+.nav-item a:hover{
+    color:cornflowerblue
+}
+#app{
+    color:coral
+}
+.boton-cv{
+    background-color: chartreuse;
+}
