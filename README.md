@@ -21,7 +21,7 @@ ___
 ___
 
 ### Vista previa
-![Proyecto](assets/pinterest.PNG) 
+![Proyecto](assets/portafolio.PNG) 
 
 <br>
 
