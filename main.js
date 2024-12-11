@@ -4,15 +4,12 @@ var typewriter = new Typewriter(app, {
     loop: true
 });
 
-typewriter.typeString('Soy Desarrolladora Frontend Jr.')
+typewriter.typeString('I am a Front-End Developer')
     .pauseFor(2500)
-    .deleteChars(27)
-    .typeString('Artista Digital')
+    .deleteChars(19)
+    .typeString('Digital Artist')
     .pauseFor(2500)
-    .deleteChars(15)
-    .typeString('Diseñadora')
-    .pauseFor(2500)
-    .deleteAll()
-    .typeString('<strong>Conóceme!</strong>')
+    .deleteChars(14)
+    .typeString('Graphic Designer')
     .pauseFor(2500)
     .start();

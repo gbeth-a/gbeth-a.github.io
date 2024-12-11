@@ -1,25 +1,171 @@
+:root{
+    --color1: #B9B1FF ;
+    --color2: #52489C ;
+    --color3: #45425A ;
+    --color4: #240046 ;
+    --color5: #EAE2B7 ;
+    --color6: #f9f5e9 ;
+    --color7: #f2ebd7 ;
+    --color8: #d1de54 ;
+    --color9: #e7e900 ;
+    --color10: #022200 ;
+    --color11: #f3f4f4 ;
+    --color12: #e5e0ec ;
+    --color13: #c5b9d3 ;
+    --color14: #e5e999 ;
+    --color15: #bec187 ;
+    --color16: #003344 ;
+    --color17: #8173e6 ;
+    --color18: #351d4b ;
+
+
+}
 *{
-    font-family:Arial, Helvetica, sans-serif
+font-family: "Raleway", serif;
+  font-optical-sizing: auto;
+  /* font-weight:400; */
+  font-style: normal;
 }
-header{
-    background-color: floralwhite;
+body{
+    background: rgb(249,245,233);
+    background: linear-gradient(180deg, rgba(249,245,233,1) 55%, rgba(185,177,255,1) 100%);
 }
-.nav-item a{
-    color: darkseagreen;
+.navbar{
+    background-color: #B9B1FF ;
+
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    position: fixed;
+    z-index: 1;
+     /* overflow: hidden;  */
+}
+
+.navbar span{
+    font-family: "Bitter", serif;
+    color: var(--color16);
+    font-weight: 500;
+}
+.navbar i{
+    color: var(--color16);
 }
 #boton-perfil{
-    background-color:cadetblue;
+    background-color:var(--color16);
+    color: var(--color14);
 }
 
 .nav-item a{
-    color: darksalmon;
+    color: #240046;
 }
 .nav-item a:hover{
-    color:cornflowerblue
+    color: var(--color14)
+}
+.hero h1{
+    font-family: "Bitter", serif;
+    color: var(--color16);
 }
 #app{
-    color:coral
+    color: #52489C
 }
 .boton-cv{
-    background-color: chartreuse;
+    border-color: var(--color14);
+    color: #8173e6;
+}
+.boton-cv:hover{
+    background-color: var(--color14);
+    border-color: #52489C;
+    color: var(--color2);
+}
+
+.titulo{
+    font-family: "Bitter", serif;
+    text-decoration:underline;
+    text-decoration-style: dotted;
+    text-decoration-color: var(--color1);
+    color: var(--color16);
+}
+.habilidades i{
+    color: var(--color17);
+}
+.habilidades h3{
+    background-color: var(--color14);
+    border-radius: 15px ;
+    padding-left: 5px;
+    color: var(--color16);
+}
+.card{
+background-color: var(--color11);
+}
+.proyectos p{
+    font-family: "Bitter", serif;
+color: var(--color2);
+
+}
+.proyectos button{
+    background-color: var(--color14);
+    border-color: var(--color13);
+}
+.proyectos button:hover{
+    background-color: var(--color3);
+}
+.proyectos a{
+    text-decoration: none;
+    color: var(--color17);
+}
+.card-text2{
+    color: var(--color13);
+}
+.testim-card{
+background-color: var(--color16);
+border-radius: 25px;
+padding: 1rem;
+}
+.testimonios h5{
+    color: var(--color9);
+}
+.testimonios h6{
+    color: var(--color1);
+}
+.testimonios p{
+    color: var(--color12);
+}
+.testimonios img{
+    padding-bottom: 1.2rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+.contact-card{
+    background-color:  var(--color7);
+    border-color: var(--color16);
+ }
+.contact i{
+    color: var(--color16);
+}
+.contact-card h1{
+    color: var(--color17);
+}
+.contact-card p{
+    color:  var(--color16);
+ }
+ .contact-card button{
+    color:  var(--color17);
+    border-color: var(--color16);
+ }
+ .contact-card button:hover{
+    background-color: var(--color16);
+    color:  var(--color5);
+    border-color: var(--color16);
+
+ }
+footer{
+   background-color: var(--color16);
+}
+footer span{
+    color: #EAE2B7;
+}
+footer a{
+    color: #EAE2B7;
 }

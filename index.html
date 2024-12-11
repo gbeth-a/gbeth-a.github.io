@@ -11,53 +11,66 @@
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <!-- Favicon -->
-  <link rel="shortcut icon" href="assets/code-square.svg" type="image/x-icon">
+  <link rel="shortcut icon" href="assets/code_blocks.svg" type="image/x-icon">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Onest:wght@100..900&family=Playwrite+IT+Trad:wght@100..400&family=Playwrite+RO:wght@100..400&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 
   <!-- hoja de estilos -->
   <link rel="stylesheet" href="style.css">
 
-  <title>Paulina Avilés</title>
+  <title>Pau Avilés</title>
 </head>
 
 <body>
-  <!-- Menpu -->
-  <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-      <i class="bi bi-code p-3"></i>
-      <span class="fs-4">Pau Avilés</span>
-    </a>
+  <!-- Menu -->
+  <header>
+    <nav class="navbar fixed-top">
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        <i class="bi bi-journal-code p-3"></i>
+        <span class="fs-4">Pau Avilés</span>
+      </a>
 
-    <ul class="nav nav-pills">
-      <li class="nav-item"><a href="#" id="boton-perfil" class="nav-link active" aria-current="page">Sobre mi</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Habilidades</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Proyectos</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Testimonios</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Contacto</a></li>
-    </ul>
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="#yo" id="boton-perfil" class="nav-link active" aria-current="page">About me</a>
+        </li>
+        <li class="nav-item"><a href="#habilidades" class="nav-link">Skills</a></li>
+        <li class="nav-item"><a href="#proyectos" class="nav-link">Projects</a></li>
+        <li class="nav-item"><a href="#testimonios" class="nav-link">References</a></li>
+        <li class="nav-item"><a href="#contacto" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main>
     <!-- Hero -->
-    <div class="hero">
+    <div class="hero" id="yo">
       <div class="px-4 py-5 my-5 text-center">
         <img class="d-block mx-auto mb-4 rounded-circle" src="assets/yo.jpg" alt="" width="200">
-        <h1 class="display-5 fw-bold text-body-emphasis">Paulina Avilés</h1>
+        <h1 class="display-5 fw-bold">Paulina Avilés</h1>
         <h2 id="app"></h2>
         <div class="col-lg-6 mx-auto">
-          <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s
-            most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system,
-            extensive prebuilt components, and powerful JavaScript plugins.</p>
+          <p class="lead mb-4">Hi, welcome to my page! </br> Here you can find information about me, my skills and my
+            work. As you will see, I am a multidisciplinary developer and I am ready to put all that knowledge into work. Over
+            the years I have worked in so many teams and enviroments which has given me the hability to communicate,
+            collaborate and be creative. </br>
+            Slide to know more!
+          </p>
           <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-            <button type="button" class="btn btn-outline-secondary btn-lg px-4 gap-3">Conoce mi trayectoria</button>
+            <a target="_blank" href="https://drive.google.com/file/d/1OGr0-JE2vUXFJ1Iqr7EvRe-5G81-TDID/view?usp=sharing">
+              <button type="button" class="btn btn-outline btn-lg px-4 gap-3 boton-cv">Know more about me</button></a>
           </div>
         </div>
       </div>
     </div>
 
     <!-- Habilidades -->
-    <div class="habilidades">
+    <div class="habilidades" id="habilidades">
       <div class="container px-4 py-5" id="hanging-icons">
-        <h2 class="pb-2 border-bottom">Habilidades</h2>
+        <h2 class="pb-2 border-bottom titulo">Skills</h2>
         <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
           <div class="col d-flex align-items-start">
             <div
@@ -65,8 +78,8 @@
               <i class="bi bi-filetype-html"></i>
             </div>
             <div>
-              <h3 class="fs-2 text-body-emphasis">Desarrollo Frontend</h3>
-              <p>He creado sitios web responsivos utilizando mis conociemientos en htm, css, js y bootstrap</p>
+              <h3 class="fs-2">Front-End Development</h3>
+              <p>I have created responsive websites using my knowledge in HTML, CSS, JS and Bootstrap.</p>
 
             </div>
           </div>
@@ -76,9 +89,10 @@
               <i class="bi bi-vector-pen"></i>
             </div>
             <div>
-              <h3 class="fs-2 text-body-emphasis">Diseño gráfico</h3>
-              <p>He diseñado recursos gráficos para impresión y redes poniendo en práctica los principios del diseño y
-                utilizando herramientas como Adobe Illustrator, Adobe Photoshop, Adobe InDesign.</p>
+              <h3 class="fs-2">Graphic Design</h3>
+              <p>I have designed graphic resources for digital and printed media, where I had the opportunity to practice
+                Design Principles and use tools like Adobe Illustrator, Adobe Photoshop, Adobe InDesign, among others.
+              </p>
 
             </div>
           </div>
@@ -88,9 +102,10 @@
               <i class="bi bi-film"></i>
             </div>
             <div>
-              <h3 class="fs-2 text-body-emphasis">Producción multimedia</h3>
-              <p>He participado y dirigido la producción y postproducción de contenido multimedia para instituciones,
-                redes y entretenimiento.</p>
+              <h3 class="fs-2">Multimedia Production</h3>
+              <p>I have collaborated and directed multimedia content production and post-production for private and
+                public institutions, social media and entertaiment with the help of tools like Adobe Premiere Pro, After
+                Effects, Maya, etc.</p>
             </div>
           </div>
         </div>
@@ -98,23 +113,23 @@
     </div>
 
     <!-- Proyectos -->
-    <div class="proyectos">
-      <div class="container">
-        <h2 class="pb-2 border-bottom">Proyectos</h2>
+    <div class="proyectos" id="proyectos">
+      <div class="container px-4 py-5">
+        <h2 class="pb-2 border-bottom titulo">Projects</h2>
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
           <div class="col">
             <div class="card shadow-sm">
               <img class="bd-placeholder-img card-img-top" src="assets/pinterest.PNG" alt="Clon de Pinterest">
               <div class="card-body">
-                <p class="card-text">Clon de Pinterest</p>
+                <p class="card-text">Pinterest Clone</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
                     <button type="button" class="btn btn-sm btn-outline-secondary"><a target="_blank"
-                        href="https://pinterest-clon-mocha.vercel.app/">Ver</a></button>
+                        href="https://pinterest-clon-mocha.vercel.app/">Go</a></button>
                     <button type="button" class="btn btn-sm btn-outline-secondary"><a target="_blank"
                         href="https://github.com/gbeth-a/pinterest-clon">Github</a></button>
                   </div>
-                  <small class="text-body-secondary">HTML, CSS y JS</small>
+                  <small class="card-text2">HTML, CSS y JS</small>
                 </div>
               </div>
             </div>
@@ -123,15 +138,15 @@
             <div class="card shadow-sm">
               <img class="bd-placeholder-img card-img-top" src="assets/primera-pag.PNG" alt="Mi Primer Pagina">
               <div class="card-body">
-                <p class="card-text">Mi primer página</p>
+                <p class="card-text">My first website</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
                     <button type="button" class="btn btn-sm btn-outline-secondary"><a target="_blank"
-                        href="#">Ver</a></button>
+                        href="https://my-first-site-rosy.vercel.app/">Go</a></button>
                     <button type="button" class="btn btn-sm btn-outline-secondary"><a target="_blank"
-                        href="#">Github</a></button>
+                        href="https://github.com/gbeth-a/MyFirstSite">Github</a></button>
                   </div>
-                  <small class="text-body-secondary">HTML, CSS</small>
+                  <small class="card-text2">HTML, CSS</small>
                 </div>
               </div>
             </div>
@@ -140,15 +155,15 @@
             <div class="card shadow-sm">
               <img class="bd-placeholder-img card-img-top" src="assets/pinterest.PNG" alt="Clon de Pinterest">
               <div class="card-body">
-                <p class="card-text">Mi Primer Página</p>
+                <p class="card-text">Tasks List</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
                     <button type="button" class="btn btn-sm btn-outline-secondary"><a target="_blank"
-                        href="#">Ver</a></button>
+                        href="https://to-do-list-mu-eosin-18.vercel.app/">Go</a></button>
                     <button type="button" class="btn btn-sm btn-outline-secondary"><a target="_blank"
-                        href="#">Github</a></button>
+                        href="https://github.com/gbeth-a/ToDoList">Github</a></button>
                   </div>
-                  <small class="text-body-secondary">HTML, CSS</small>
+                  <small class="card-text2">HTML, CSS</small>
                 </div>
               </div>
             </div>
@@ -158,68 +173,107 @@
     </div>
 
     <!-- Testimonios -->
-    <div class="testimonios">
+    <div class="testimonios " id="testimonios">
+      <div class="container px-4 py-5 my-5we">
+        <h2 class="pb-2 border-bottom titulo">People talk...</h2>
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
 
-      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="d-flex justify-content-center">
-              <!-- card -->
-              <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">1 Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
+            <div class="carousel-item active">
+              <div class="d-flex justify-content-center">
+                <!-- card -->
+                <div class="card testim-card" style="width: 20rem;">
+                  <img src="assets/profile-pic-02.png" class="card-img-top rounded-circle center " alt="...">
+
+                  <h5 class="card-title text-center">José Soto</h5>
+                  <h6 class="card-subtitle text-center mb-1">Leader, HCSC Bilingual Team</h6>
+
+                  <div class="card-body">
+                    <p class="card-text">Paulina is a very capable person. She has demonstrated her hability to adapt
+                      and grow. She has a very remarkable work ethic and a very strong team spirit. Her ability to
+                      communicate
+                      and problem solving skills make her work outstanding and have helped her get one of the most
+                      relevant awards we have in the institution.</p>
+                  </div>
                 </div>
+                <!-- fin card -->
               </div>
-              <!-- fin card -->
             </div>
+
+            <div class="carousel-item">
+              <div class="d-flex justify-content-center">
+                <!-- card -->
+                <div class="card testim-card" style="width: 20rem;">
+                  <img src="assets/profile-pic-03.png" class="card-img-top rounded-circle center " alt="...">
+
+                  <h5 class="card-title text-center">Tirtha Prasad Mukhopadhyay</h5>
+                  <h6 class="card-subtitle text-center mb-1">Fulltime professor UG</h6>
+
+                  <div class="card-body">
+                    <p class="card-text">Paulina demonstrates excellent skills in organization, good communication, is a
+                      quick lerarner and is very fluent in English. She has such great dedication and courage, and she
+                      cantake up any challende in learning and communicating her appraisal for specific task
+                      requirements.</p>
+                  </div>
+                </div>
+                <!-- fin card -->
+              </div>
+            </div>
+
           </div>
 
-          <div class="carousel-item">
-            <div class="d-flex justify-content-center">
-              <!-- card -->
-              <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">2 Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                </div>
-              </div>
-              <!-- fin card -->
-            </div>
-          </div>
 
-          <div class="carousel-item">
-            <div class="d-flex justify-content-center">
-              <!-- card -->
-              <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">3 Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                </div>
-              </div>
-              <!-- fin card -->
-            </div>
-          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden ">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-          data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-          data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
-
     </div>
 
 
+
+    <!-- Contact -->
+    <div class="contact" id="contacto">
+      <div class="container py-5 my-5">
+        <div class="position-relative p-5 text-center rounded-5 contact-card">
+          <i class="bi bi-chat-heart d-block mx-auto mb-4 fs-1"></i>
+          <h1 class=" fw-bold">Let's get in touch</h1>
+          <p class="col-lg-6 mx-auto mb-4">
+            Would you like to know more about my work? Contact me to start a new proyect!
+          </p>
+          <a href="mailto:p.garabeth@gmail.com">
+            <button class="btn btn-outline-secondary px-5 mb-5" type="button">
+              E-mail me </button>
+          </a>
+        </div>
+      </div>
+    </div>
+
   </main>
+  <!-- Footer -->
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+      <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+        <svg class="bi" width="30" height="24">
+          <use xlink:href="#bootstrap"></use>
+        </svg>
+      </a>
+      <span class="mb-3 mb-md-0 small">© 2024 Created by Pau Avilés</span>
+    </div>
+
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex px-5">
+      <li class="ms-3"><a href="https://github.com/gbeth-a" target="_blank"><i class="bi bi-github"></i></a></li>
+      <li class="ms-3"><a href="https://www.linkedin.com/in/paulina-garabeth/" target="_blank"><i
+            class="bi bi-linkedin"></i></a></li>
+    </ul>
+  </footer>
 
 
 
